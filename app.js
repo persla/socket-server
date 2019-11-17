@@ -6,7 +6,7 @@ const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
-// io.origins(['https://socket-client.jsramverk.me:443']);
+io.origins(['https://me.teachmeapp.me:443']);
 
 let allMassage = [{ author: 'From admin', message: "Den här chatten skapades i nov 2019", timestamp: '2019-11-16 20:04:06'},
 ];
